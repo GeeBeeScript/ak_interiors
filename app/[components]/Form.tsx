@@ -24,7 +24,7 @@ export default function Form() {
   const [errors, setErrors] = useState<FormErrors>({});
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement>,
   ) => {
     const { name, value } = e.target;
 
@@ -41,22 +41,19 @@ export default function Form() {
     const newErrors: FormErrors = {};
 
     if (formData.name.trim().length < 6) {
-      newErrors.name = "Name must be at least 6 characters long";
+      newErrors.name = "Namnet måste vara minst 6 tecken långt";
     }
 
     if (!formData.email.includes("@") || !formData.email.includes(".")) {
-      newErrors.email = "Please enter a valid email address";
+      newErrors.email = "Ange en giltig e-postadress";
     }
 
     if (!formData.service) {
-      newErrors.service = "Please select a service category";
+      newErrors.service = "Vänligen välj en servicekategori";
     }
 
-    if (
-      formData.location === "Other" &&
-      !formData.otherLocation.trim()
-    ) {
-      newErrors.otherLocation = "Please specify your location";
+    if (formData.location === "Other" && !formData.otherLocation.trim()) {
+      newErrors.otherLocation = "Vänligen ange din plats";
     }
 
     setErrors(newErrors);
@@ -68,11 +65,45 @@ export default function Form() {
 
     if (!validate()) return;
 
-    console.log("Form submitted:", formData);
+    const subject = encodeURIComponent(
+      "Formulärinlämning från Anna Katarinas inredningssajt:",
+    );
+
+    const body = encodeURIComponent(
+      `En användare skickade in följande information för vidare uppföljning
+
+      Namn: ${formData.name}
+      Tjänstekategori: ${formData.service}
+      E-post: ${formData.email}
+
+      Deras plats:
+      ${formData.location}
+
+      Deras plats (om inte Sverige) ,
+      ${formData.otherLocation}
+      `,
+    );
+
+    const mailtoLink = `mailto:info@annakatarinainterior.se?subject=${subject}&body=${body}`;
+
+    // Triggered directly by user submit → correct browser behavior
+    window.location.href = mailtoLink;
+
+    // Reset form data
+    // setFormData({
+    //   name: "",
+    //   email: "",
+    //   service: "",
+    //   location: "Sweden",
+    //   otherLocation: "",
+    // });
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 mt-10 pt-15 pb-25 bg-green-section/40" id="form">
+    <div
+      className="min-h-screen flex items-center justify-center px-4 mt-10 pt-15 pb-25 bg-green-section/40"
+      id="form"
+    >
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-md sm:max-w-lg lg:max-w-xl
@@ -81,12 +112,14 @@ export default function Form() {
                    flex flex-col gap-4 sm:gap-5 lg:gap-6"
       >
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-center font-main text-display-text">
-          Schedule A Consultation / Contact Us
+          Boka en konsultation / Kontakta oss
         </h2>
 
         {/* Name */}
         <div className="flex flex-col">
-          <label className="text-sm sm:text-base font-medium text-display-text font-schib">Name</label>
+          <label className="text-sm sm:text-base font-medium text-display-text font-schib">
+            Namn
+          </label>
           <input
             type="text"
             name="name"
@@ -101,7 +134,9 @@ export default function Form() {
 
         {/* Email */}
         <div className="flex flex-col">
-          <label className="text-sm sm:text-base font-medium text-display-text font-schib">Email</label>
+          <label className="text-sm sm:text-base font-medium text-display-text font-schib">
+            E-post
+          </label>
           <input
             type="email"
             name="email"
@@ -117,7 +152,7 @@ export default function Form() {
         {/* Service Category */}
         <div className="flex flex-col">
           <label className="text-sm sm:text-base font-medium text-display-text font-schib">
-            Service Category
+            Tjänstekategori
           </label>
           <select
             name="service"
@@ -125,32 +160,30 @@ export default function Form() {
             onChange={handleChange}
             className="mt-1 p-2 sm:p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-black text-display-text font-schib"
           >
-            <option value="">Select a service</option>
-            <option value="Interior design">Interior design</option>
-            <option value="Furniture design">Furniture design</option>
-            <option value="Styling & decoration">Styling & decoration</option>
-            <option value="Planning and consultation">
-              Planning and consultation
-            </option>
+            <option value="">Välj en tjänst</option>
+            <option value="KulorKonsultation">KulorKonsultation</option>
+            <option value="Stylingkonsultation">Stylingkonsultation</option>
+            <option value="Inredningsuppdrag">Inredningsuppdrag</option>
+            <option value="Möbelrum">Möbelrum</option>
           </select>
           {errors.service && (
-            <span className="text-red-500 text-sm mt-1">
-              {errors.service}
-            </span>
+            <span className="text-red-500 text-sm mt-1">{errors.service}</span>
           )}
         </div>
 
         {/* Location */}
         <div className="flex flex-col">
-          <label className="text-sm sm:text-base font-medium text-display-text font-schib">Location</label>
+          <label className="text-sm sm:text-base font-medium text-display-text font-schib">
+            Plats
+          </label>
           <select
             name="location"
             value={formData.location}
             onChange={handleChange}
             className="mt-1 p-2 sm:p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-black text-display-text font-schib"
           >
-            <option value="Sweden">Sweden</option>
-            <option value="Other">Other</option>
+            <option value="Sweden">Sverige</option>
+            <option value="Other">Andra</option>
           </select>
         </div>
 
@@ -158,7 +191,7 @@ export default function Form() {
         {formData.location === "Other" && (
           <div className="flex flex-col">
             <label className="text-sm sm:text-base font-medium text-display-text font-schib">
-              Other
+              Andra
             </label>
             <input
               type="text"
@@ -183,7 +216,7 @@ export default function Form() {
                      text-sm sm:text-base
                      hover:opacity-90 transition-all duration-75 ease-in font-schib font-bold"
         >
-          Submit
+          framlägga
         </button>
       </form>
     </div>

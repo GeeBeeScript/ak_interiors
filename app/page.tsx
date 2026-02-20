@@ -19,7 +19,7 @@ export default function Home() {
       <MainDisplay />
       <Services />
       <DisplaySection />
-      <DrawingSection />
+      {/* <DrawingSection /> */}
       <Steps />
       <QuestionSection />
       <BenefitSection />

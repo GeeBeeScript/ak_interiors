@@ -15,12 +15,12 @@ const Footer = () => {
             <div className="flex items-end pb-7 sm:max-2xl:pb-10 h-full w-[60%]">
 
                 <div className="w-[50%] mx-auto flex flex-col justify-between items-start">
-                    <p className="font-main text-[1.2rem] sm:text-[1.5rem] md:max-2xl:text-[1.7rem] max-[250px]:break-all">Have a Question ?</p>
-                    <p className="font-hanken text-[1rem] sm:text-[1.1rem] md:max-2xl:text-[1.2rem] text-wrap break-all">support@yourdomain.com</p>
+                    <p className="font-main text-[1.2rem] sm:text-[1.5rem] md:max-2xl:text-[1.7rem] max-[250px]:break-all">Har du en fråga?</p>
+                    <p className="font-hanken text-[1rem] sm:text-[1.1rem] md:max-2xl:text-[1.2rem] text-wrap break-all">info@annakatarinainterior.se</p>
                 </div>
                 <div className="w-[40%] mx-auto flex flex-col justify-between items-start">
-                    <p className="font-main text-[1.2rem] sm:text-[1.5rem] md:max-2xl:text-[1.7rem]">Give Us A Call</p>
-                    <p className="font-hanken text-[1rem] sm:text-[1.1rem] md:max-2xl:text-[1.2rem]">+1 (123) 456-7890</p>
+                    <p className="font-main text-[1.2rem] sm:text-[1.5rem] md:max-2xl:text-[1.7rem]">Ring oss</p>
+                    <p className="font-hanken text-[1rem] sm:text-[1.1rem] md:max-2xl:text-[1.2rem] break-all">0720175620</p>
                 </div>
 
             </div>

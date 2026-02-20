@@ -71,7 +71,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               onClick={onClose}
               className="hover:opacity-70 transition"
             >
-              Interior design
+              KulorKonsultation
             </Link>
           </li>
           <li
@@ -87,7 +87,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               onClick={onClose}
               className="hover:opacity-70 transition"
             >
-              Furniture design
+              Stylingkonsultation
             </Link>
           </li>
           <li
@@ -103,7 +103,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               onClick={onClose}
               className="hover:opacity-70 transition"
             >
-              Styling & decoration
+              Inredningsuppdrag
             </Link>
           </li>
           <li
@@ -119,7 +119,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               onClick={onClose}
               className="hover:opacity-70 transition"
             >
-              Planning and consultation
+              Möbelrum
             </Link>
           </li>
         </ul>

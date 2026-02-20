@@ -35,12 +35,12 @@ const Navigation = () => {
       <MenuOverlay isOpen={mobileMenuOpen} onClose={menuCloseHandler} />
       {/* Banner section */}
       <div className="w-full py-1.5 bg-newsletter-bg text-newsletter-text">
-        <div className="font-bold w-[70%] sm:max-2xl:w-[50%] mx-auto text-center font-schib text-[0.8rem] sm:hidden">
-          Join us and get info on previews & discounts
+        <div className="font-bold w-[90%] mx-auto text-center font-schib text-[0.8rem] sm:hidden">
+          Gå med oss ​​och få information om förhandsvisningar och rabatter
         </div>
 
         <div className="font-bold w-[70%] sm:max-2xl:w-[50%] mx-auto text-center font-schib hidden sm:block">
-          Join us and get info on previews, discounts & exclusive promotions
+          Gå med oss ​​och få information om förhandsvisningar, rabatter och exklusiva kampanjer
         </div>
       </div>
       {/* End of Banner section */}
@@ -73,7 +73,7 @@ function NavContent(props: {
         <div>INTERIORS</div>
       </li>
 
-      <li className="hidden md:flex md:justify-between md:items-center md:gap-[2rem] font-space">
+      <li className="hidden md:flex md:justify-between md:items-center md:gap-[2.4rem] font-space">
         <p
           onClick={() => {
             document
@@ -82,7 +82,7 @@ function NavContent(props: {
           }}
           className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
         >
-          Planning
+          KulorKonsultation
         </p>
         <p
           onClick={() => {
@@ -92,7 +92,7 @@ function NavContent(props: {
           }}
           className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
         >
-          Furniture design
+          Stylingkonsultation
         </p>
         <p
           onClick={() => {
@@ -102,8 +102,9 @@ function NavContent(props: {
           }}
           className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
         >
-          Consultation
+          Inredningsuppdrag
         </p>
+        
         <p
           onClick={() => {
             document
@@ -112,17 +113,7 @@ function NavContent(props: {
           }}
           className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
         >
-          Styling & Decoration
-        </p>
-        <p
-          onClick={() => {
-            document
-              .getElementById("form")
-              ?.scrollIntoView({ behavior: "smooth" });
-          }}
-          className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
-        >
-          Interior design
+          Möbelrum
         </p>
       </li>
 
@@ -136,7 +127,7 @@ function NavContent(props: {
             }}
             className="cursor-pointer bg-newsletter-bg text-newsletter-text font-space text-[0.7rem] py-[0.2rem] px-[0.4rem] sm:max-2xl:text-[1rem] sm:max-2xl:py-[0.3rem] sm:max-2xl:px-[0.6rem] rounded-2xl hover:bg-gold-section-second-color/60 transition-all duration-100 ease-in-out"
           >
-            Contact Us
+            Kontakta oss
           </button>
         </div>
 

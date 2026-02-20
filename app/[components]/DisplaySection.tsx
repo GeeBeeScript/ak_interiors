@@ -3,7 +3,7 @@ import Image from "next/image"
 const DisplaySection = () => {
   return (
     <section className="bg-green-section/20 flex flex-col justify-between items-center py-7 w-full gap-10 my-10">
-        <p className="font-bold font-caglio text-3xl text-center">Transforming Spaces Into Living Experiences</p>
+        <p className="font-bold font-caglio text-3xl text-center">Förvandla utrymmen till levande upplevelser</p>
         <div className="grid grid-cols-2 grid-rows-6 gap-5">
 
             <div className="bg-[url('/resources_new/living_room.jpg')] w-[40vw]  sm:w-48 md:w-[45vw] bg-cover bg-center bg-no-repeat rounded-lg row-span-3">

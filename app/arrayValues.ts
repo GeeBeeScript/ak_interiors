@@ -1,95 +1,77 @@
 export const frameValues = [
   {
     frameImg: "/resources_new/new_consult.png",
-    frameTxt: "Design Consultation",
+    frameTxt: "Stylingkonsultation",
     frameComment:
-      "Clear guidance to understand your needs and define a tailored direction for the project",
-  },
-  {
-    frameImg: "/resources_new/concept_png.png",
-    frameTxt: "Concept Development",
-    frameComment:
-      "Creative ideas shaped into a cohesive vision that reflects your style and goals",
+      "Genomtänkta detaljer som ger balans och personlighet",
   },
   {
     frameImg: "/resources_new/planning.jpg",
-    frameTxt: "Space Planning",
+    frameTxt: "Inredningsuppdrag",
     frameComment:
-      "Thoughtful layouts designed to maximize flow, function, and everyday comfort",
+      "Tidlösa utrymmen där funktion möter skönhet",
   },
   {
     frameImg: "/resources_new/materials.jpg",
-    frameTxt: "Furniture Selection",
+    frameTxt: "KulorKonsultation",
     frameComment:
-      "Carefully chosen finishes and materials that balance aesthetics, quality, and durability",
+      "Harmoniska paletter som höjer stämningen och förenar ditt utrymme.",
   },
   {
     frameImg: "/resources_new/styling_decoration.png",
-    frameTxt: "Styling & Decoration",
+    frameTxt: "Möbelrum",
     frameComment:
-      "Curated furnishings and details that bring character, warmth, and personality",
-  },
-  {
-    frameImg: "/resources_new/project_implementation.jpg",
-    frameTxt: "Project Implementation",
-    frameComment:
-      "Seamless coordination to turn approved designs into a well-executed reality",
+      "Genomtänkta planlösningar som förbättrar flöde och komfort",
   },
 ];
 
 export const benefitValues = [
   {
     icon: "resources_new/money.svg",
-    text: "Save Money",
+    text: "Spara pengar",
     alt: "Money icon",
     subText:
-      "Accurate cost planning & smart design choices to avoid costly mistakes and rework.",
+      "Noggrann kostnadsplanering och smarta designval för att undvika kostsamma misstag och omarbeten.",
   },
   {
     icon: "resources_new/calendar.svg",
-    text: "Save Time",
+    text: "Spara tid",
     alt: "Time icon",
     subText:
-      "Streamlined planning tools & expert guidance to speed up decisions and execution.",
+      "Effektiva planeringsverktyg och expertvägledning för att snabba upp beslut och genomförande.",
   },
   {
     icon: "resources_new/heart.svg",
-    text: "Stress Less",
+    text: "Stressa mindre",
     alt: "Heart icon",
     subText:
-      "Realistic 3D model & top professional help to take the guesswork out of the designing process.",
+      "Realistiska modeller och experter från toppklass hjälper till att eliminera gissningsleken i designprocessen.",
   },
 ];
 
 export const servicesArray = [
   {
     id: "it1",
-    title: "Wide array of Furniture variants",
+    title: "Brett utbud av möbelvarianter",
     imageSrc: "resources_new/couch.svg",
     imageAlt: "random",
   },
   {
     id: "it2",
-    title: "Vast range of Color Palette",
+    title: "Brett utbud av färgpaletter",
     imageSrc: "resources_new/color_palette.svg",
     imageAlt: "random",
   },
   {
     id: "it3",
-    title: "Design concepts from seasoned experts",
+    title: "Designkoncept från erfarna experter",
     imageSrc: "resources_new/award.svg",
     imageAlt: "random",
   },
   {
     id: "it4",
-    title: "One-on-one interior design consultation",
+    title: "Enskild konsultation inom inredning",
     imageSrc: "resources_new/phone.svg",
-    imageAlt: "random",
-  },
-  {
-    id: "it5",
-    title: "Technical drawing model of furniture and your space",
-    imageSrc: "resources_new/three_d.svg",
     imageAlt: "random",
   },
 ];

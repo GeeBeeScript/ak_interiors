@@ -5,8 +5,8 @@ const Services = () => {
   return (
     <section className="text-newsletter-bg flex flex-col justify-between items-center gap-10 md:max-2xl:gap-0 w-full my-32">
       <div className="flex flex-col justify-between items-center gap-2.5 text-center">
-        <p className="font-bold font-cabin text-[2.2rem]">Work with Seasoned Interior Designers</p>
-        <p className="font-schib text-[1.1rem]">Get personalized interior design help</p>
+        <p className="font-bold font-cabin max-sm:text-[1.8rem] text-[2.2rem]">Arbeta med erfarna inredningsarkitekter</p>
+        <p className="font-schib text-[1.1rem]">Få personlig hjälp med inredning</p>
       </div>
 
       <div className="flex max-[304px]:flex-col justify-between items-center flex-wrap w-[95%] md:max-2xl:max-w-[80%] text-center pt-7 mb-5">
