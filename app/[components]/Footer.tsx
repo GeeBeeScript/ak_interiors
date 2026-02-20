@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex h-[85%] max-[350px]:h-[90%]">
 
             <div className="w-[40%] h-full flex flex-col justify-start items-center pt-10">
-                <div className="font-cinz text-center max-[250px]:text-[1rem] text-[1.2rem] sm:text-[1.6rem] md:max-2xl:text-3xl">
+                <div className="font-nunito font-light tracking-[0.15em] text-center max-[250px]:text-[0.9rem] text-[1rem] sm:text-[1.6rem] md:max-2xl:text-3xl">
                     <p>ANNA KATARINA</p>
                     <p>INTERIORS</p>
                 </div>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 
@@ -10,13 +10,16 @@ import DrawingSection from "./[components]/DrawingSection";
 import Steps from "./[components]/Steps";
 import QuestionSection from "./[components]/QuestionSection";
 import BenefitSection from "./[components]/BenefitSection";
-import Footer from "./[components]/Footer";
 import Form from "./[components]/Form";
+import DesignCategories from "./[components]/DesignCategories";
+import Navigation from "./[components]/Navigation";
 
 export default function Home() {
   return (
     <main className="">
+      <Navigation />
       <MainDisplay />
+      <DesignCategories />
       <Services />
       <DisplaySection />
       {/* <DrawingSection /> */}
@@ -24,7 +27,6 @@ export default function Home() {
       <QuestionSection />
       <BenefitSection />
       <Form />
-      <Footer />
     </main>
   );
 }

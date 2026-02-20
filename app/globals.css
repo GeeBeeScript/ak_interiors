@@ -38,6 +38,20 @@
   --font-cabin: var(--font-cabin);
   --font-schib: var(--font-schibsted);
   --font-caglio: var(--font-cagliostro);
+  --font-nunito: var(--font-nunito);
+
+  --animate-scroll-up: scrollUp 40s linear infinite;
+  --animate-scroll-down: scrollDown 45s linear infinite;
+
+  @keyframes scrollUp {
+    from { transform: translateY(0); }
+    to { transform: translateY(-50%); }
+  }
+
+  @keyframes scrollDown {
+    from { transform: translateY(-50%); }
+    to { transform: translateY(0); }
+  }
 }
 
 @media (prefers-color-scheme: dark) {

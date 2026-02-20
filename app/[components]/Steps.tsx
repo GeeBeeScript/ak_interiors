@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { frameValues } from "../arrayValues";
+import Link from "next/link";
 
 const Steps = () => {
   return (
@@ -27,14 +28,10 @@ const Steps = () => {
               </p>
               <div className="flex justify-between items-center">
                 <div
-                  onClick={() => {
-                    document
-                      .getElementById("form")
-                      ?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                  className="cursor-pointer flex justify-between sm:max-2xl:gap-6 gap-2 text-display-text"
+                  className=""
                 >
-                  <p className="font-hanken">Läs mer</p>
+                  <Link href={item.frameLink} className="cursor-pointer flex justify-between sm:max-2xl:gap-6 gap-2 text-display-text">
+                    <p className="font-hanken">Läs mer</p>
                   <Image
                     src="/resources_new/long_arrow.svg"
                     width={20}
@@ -42,6 +39,7 @@ const Steps = () => {
                     alt="materials"
                     className="max-[250px]:hidden"
                   />
+                  </Link>
                 </div>
                 <p className="font-sans text-[1.2rem] md:max-2xl:text-[1.3rem]">
                   0{+index + 1}

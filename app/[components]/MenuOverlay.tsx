@@ -59,15 +59,10 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
       <nav className="flex flex-1 items-center justify-center">
         <ul className="flex flex-col items-center gap-6 text-lg sm:text-xl lg:text-2xl ">
           <li
-            onClick={() => {
-              document
-                .getElementById("form")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
             className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100"
           >
             <Link
-              href="#form"
+              href="/kulorkonsultation"
               onClick={onClose}
               className="hover:opacity-70 transition"
             >
@@ -75,15 +70,10 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
             </Link>
           </li>
           <li
-            onClick={() => {
-              document
-                .getElementById("form")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
             className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100"
           >
             <Link
-              href="#form"
+              href="/stylingkonsultation"
               onClick={onClose}
               className="hover:opacity-70 transition"
             >
@@ -91,15 +81,10 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
             </Link>
           </li>
           <li
-            onClick={() => {
-              document
-                .getElementById("form")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
             className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100"
           >
             <Link
-              href="#form"
+              href="/inredningsuppdrag"
               onClick={onClose}
               className="hover:opacity-70 transition"
             >
@@ -107,19 +92,14 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
             </Link>
           </li>
           <li
-            onClick={() => {
-              document
-                .getElementById("form")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
             className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100"
           >
             <Link
-              href="#form"
+              href="/onlinestyling"
               onClick={onClose}
               className="hover:opacity-70 transition"
             >
-              Möbelrum
+              OnlineStyling
             </Link>
           </li>
         </ul>

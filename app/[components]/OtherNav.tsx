@@ -3,24 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import MenuOverlay from "./MenuOverlay";
 
-const Navigation = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+const OtherNav = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 80);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const menuOpenHandler = () => {
     setMobileMenuOpen(true);
@@ -40,7 +27,8 @@ const Navigation = () => {
         </div>
 
         <div className="font-bold w-[70%] sm:max-2xl:w-[50%] mx-auto text-center font-schib hidden sm:block">
-          Gå med oss ​​och få information om förhandsvisningar, rabatter och exklusiva kampanjer
+          Gå med oss ​​och få information om förhandsvisningar, rabatter och
+          exklusiva kampanjer
         </div>
       </div>
       {/* End of Banner section */}
@@ -49,23 +37,17 @@ const Navigation = () => {
       <nav
         className={`
             w-full shadow-xl
-            ${
-              isScrolled
-                ? "bg-newsletter-text text-newsletter-bg transition-all"
-                : "bg-linear-to-b from-logo-con-gradient-color/20 to-[#000]/20 text-newsletter-text"
+           bg-newsletter-text text-newsletter-bg transition-all
             }
         `}
       >
-        <NavContent scrollState={isScrolled} openMobileMenu={menuOpenHandler} />
+        <NavContent openMobileMenu={menuOpenHandler} />
       </nav>
     </header>
   );
 };
 
-function NavContent(props: {
-  scrollState: boolean;
-  openMobileMenu: () => void;
-}) {
+function NavContent(props: { openMobileMenu: () => void }) {
   return (
     <ul className="w-full flex justify-between items-center py-[0.5rem] px-[0.75rem] sm:max-2xl:py-[1rem] sm:max-2xl:px-[1.5rem]">
       <li className="font-nunito font-light text-center tracking-[0.15em]">
@@ -74,46 +56,18 @@ function NavContent(props: {
       </li>
 
       <li className="hidden md:flex md:justify-between md:items-center md:gap-[2.4rem] font-space">
-        <p
-          onClick={() => {
-            document
-              .getElementById("form")
-              ?.scrollIntoView({ behavior: "smooth" });
-          }}
-          className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
-        >
-          KulorKonsultation
+        <p className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in">
+          <Link href="/kulorkonsultation">KulorKonsultation</Link>
         </p>
-        <p
-          onClick={() => {
-            document
-              .getElementById("form")
-              ?.scrollIntoView({ behavior: "smooth" });
-          }}
-          className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
-        >
-          Stylingkonsultation
+        <p className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in">
+          <Link href="/stylingkonsultation">Stylingkonsultation</Link>
         </p>
-        <p
-          onClick={() => {
-            document
-              .getElementById("form")
-              ?.scrollIntoView({ behavior: "smooth" });
-          }}
-          className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
-        >
-          Inredningsuppdrag
+        <p className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in">
+          <Link href="/inredningsuppdrag">Inredningsuppdrag</Link>
         </p>
-        
-        <p
-          onClick={() => {
-            document
-              .getElementById("form")
-              ?.scrollIntoView({ behavior: "smooth" });
-          }}
-          className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
-        >
-          Möbelrum
+
+        <p className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in">
+          <Link href="/onlinestyling">OnlineStyling</Link>
         </p>
       </li>
 
@@ -133,9 +87,7 @@ function NavContent(props: {
 
         <div className="md:hidden" onClick={props.openMobileMenu}>
           <Image
-            src={`resources_new/${
-              props.scrollState ? "menu_icon.svg" : "menu_svg.svg"
-            }`}
+            src={`resources_new/${"menu_icon.svg"}`}
             width={30}
             height={30}
             alt="menu icon"
@@ -147,4 +99,4 @@ function NavContent(props: {
   );
 }
 
-export default Navigation;
+export default OtherNav;
