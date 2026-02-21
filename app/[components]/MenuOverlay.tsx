@@ -40,7 +40,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
     >
       {/* Close button */}
       <div>
-        <div className="my-3 font-nunito text-[1.1rem] font-light text-center tracking-[0.15em]">
+        <div className="absolute top-30 z-20 w-full font-nunito text-[1.1rem] font-light text-center tracking-[0.15em]">
         <div>ANNA KATARINA</div>
         <div>INTERIORS</div>
       </div>
