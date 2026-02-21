@@ -16,7 +16,7 @@ export default function AutoSlideshow({ leftImages, rightImages }: Props) {
               <img
                 key={i}
                 src={src}
-                className="w-full object-cover"
+                className="w-full object-cover py-2 rounded-xl"
                 alt=""
               />
             ))}
@@ -30,7 +30,7 @@ export default function AutoSlideshow({ leftImages, rightImages }: Props) {
               <img
                 key={i}
                 src={src}
-                className="w-full object-cover"
+                className="w-full object-cover py-2 rounded-xl"
                 alt=""
               />
             ))}
