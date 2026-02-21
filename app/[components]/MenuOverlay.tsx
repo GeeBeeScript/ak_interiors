@@ -39,7 +39,12 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
     `}
     >
       {/* Close button */}
-      <div className="absolute top-6 right-6">
+      <div>
+        <div className="my-3 font-nunito text-[1.1rem] font-light text-center tracking-[0.15em]">
+        <div>ANNA KATARINA</div>
+        <div>INTERIORS</div>
+      </div>
+        <div className="absolute top-6 right-6">
         <button
           onClick={onClose}
           aria-label="Close menu"
@@ -53,6 +58,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
             alt="close icon"
           />
         </button>
+      </div>
       </div>
 
       {/* Menu content */}
