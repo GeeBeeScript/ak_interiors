@@ -1,10 +1,11 @@
 import React from "react";
 import AutoSlideshow from "./AutoSlideshow";
 import { slideShowArrayLeft, slideShowArrayRight } from "../arrayValues";
+import Image from "next/image";
 
 const DesignCategories = () => {
   return (
-    <div className="h-[200vh] overflow-hidden bg-zinc-200 py-7 flex w-full flex-col items-center">
+    <div className="bg-zinc-200 py-7 flex w-full flex-col items-center">
       <div className="flex flex-col gap-5 sm:gap-7 justify-between items-center mb-10 px-4 py-2 w-full sm:max-2xl:w-[50%] text-center">
         <p className="font-bold font-main text-3xl text-center text-[#333]">
           Bostads- och kommersiell inredning
@@ -31,10 +32,15 @@ const DesignCategories = () => {
           </button>
         </div>
       </div>
-      <AutoSlideshow
-        leftImages={slideShowArrayLeft}
-        rightImages={slideShowArrayRight}
-      />
+      
+      <div className="flex flex-col sm:flex-row gap-7 justify-between items-center w-full px-4">
+        <div className="w-full h-[30%]">
+          <Image src="/resources_new/restaurant_4.jpg" alt="office design image" width={2000} height={2000} className="w-full object-cover"/>
+        </div>
+        <div className="w-full">
+          <Image src="/resources_new/restaurant_2.jpg" alt="office design image" width={2000} height={2000} className="w-full object-cover"/>
+        </div>
+      </div>
     </div>
   );
 };

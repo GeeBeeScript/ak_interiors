@@ -40,73 +40,81 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
     >
       {/* Close button */}
       <div>
-        <div className="absolute top-30 z-20 w-full font-nunito text-[1.1rem] font-light text-center tracking-[0.15em]">
-        <div>ANNA KATARINA</div>
-        <div>INTERIORS</div>
-      </div>
+        <div className="absolute top-20 z-20 w-full font-nunito text-[1.1rem] font-light text-center tracking-[0.15em]">
+          <div>ANNA KATARINA</div>
+          <div>INTERIORS</div>
+        </div>
         <div className="absolute top-6 right-6">
-        <button
-          onClick={onClose}
-          aria-label="Close menu"
-          className="text-2xl font-bold"
-        >
-          {/* Placeholder for X icon */}
-          <Image
-            src="resources_new/close.svg"
-            width={20}
-            height={20}
-            alt="close icon"
-          />
-        </button>
-      </div>
+          <button
+            onClick={onClose}
+            aria-label="Close menu"
+            className="text-2xl font-bold"
+          >
+            {/* Placeholder for X icon */}
+            <Image
+              src="resources_new/close.svg"
+              width={20}
+              height={20}
+              alt="close icon"
+            />
+          </button>
+        </div>
       </div>
 
       {/* Menu content */}
       <nav className="flex flex-1 items-center justify-center">
         <ul className="flex flex-col items-center gap-6 text-lg sm:text-xl lg:text-2xl ">
-          <li
-            className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100"
-          >
-            <Link
-              href="/kulorkonsultation"
-              onClick={onClose}
+          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
+            <button
+              onClick={() => {
+                document
+                  .getElementById("form")
+                  ?.scrollIntoView({ behavior: "smooth" });
+                onClose();
+              }}
               className="hover:opacity-70 transition"
             >
               KulorKonsultation
-            </Link>
+            </button>
           </li>
-          <li
-            className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100"
-          >
-            <Link
-              href="/stylingkonsultation"
-              onClick={onClose}
+          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
+            <button
+              onClick={() => {
+                document
+                  .getElementById("form")
+                  ?.scrollIntoView({ behavior: "smooth" });
+                onClose();
+              }}
               className="hover:opacity-70 transition"
             >
               Stylingkonsultation
-            </Link>
+            </button>
           </li>
-          <li
-            className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100"
-          >
-            <Link
-              href="/inredningsuppdrag"
-              onClick={onClose}
+          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
+            <button
+              onClick={() => {
+                document
+                  .getElementById("form")
+                  ?.scrollIntoView({ behavior: "smooth" });
+                onClose();
+              }}
               className="hover:opacity-70 transition"
             >
               Inredningsuppdrag
-            </Link>
+            </button>
           </li>
-          <li
-            className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100"
-          >
-            <Link
-              href="/onlinestyling"
-              onClick={onClose}
+          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
+            <button
+              onClick={() => {
+                document
+                  .getElementById("form")
+                  ?.scrollIntoView({ behavior: "smooth" });
+                onClose();
+              }}
               className="hover:opacity-70 transition"
             >
               OnlineStyling
-            </Link>
+            </button>
           </li>
         </ul>
       </nav>

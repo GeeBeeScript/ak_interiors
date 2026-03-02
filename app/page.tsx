@@ -13,18 +13,20 @@ import BenefitSection from "./[components]/BenefitSection";
 import Form from "./[components]/Form";
 import DesignCategories from "./[components]/DesignCategories";
 import Navigation from "./[components]/Navigation";
+import NewServices from "./[components]/NewServices";
 
 export default function Home() {
   return (
     <main className="">
       <Navigation />
       <MainDisplay />
+      <NewServices />
       <DesignCategories />
-      <Services />
-      <DisplaySection />
+      {/* <Services /> */}
+      {/* <DisplaySection /> */}
       {/* <DrawingSection /> */}
       <Steps />
-      <QuestionSection />
+      {/* <QuestionSection /> */}
       <BenefitSection />
       <Form />
     </main>

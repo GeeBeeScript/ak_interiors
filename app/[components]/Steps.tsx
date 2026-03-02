@@ -27,19 +27,24 @@ const Steps = () => {
                 {item.frameComment}
               </p>
               <div className="flex justify-between items-center">
-                <div
-                  className=""
-                >
-                  <Link href={item.frameLink} className="cursor-pointer flex justify-between sm:max-2xl:gap-6 gap-2 text-display-text">
+                <div className="">
+                  <button
+                    onClick={() => {
+                      document
+                        .getElementById("form")
+                        ?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                    className="cursor-pointer flex justify-between sm:max-2xl:gap-6 gap-2 text-display-text"
+                  >
                     <p className="font-hanken">Läs mer</p>
-                  <Image
-                    src="/resources_new/long_arrow.svg"
-                    width={20}
-                    height={20}
-                    alt="materials"
-                    className="max-[250px]:hidden"
-                  />
-                  </Link>
+                    <Image
+                      src="/resources_new/long_arrow.svg"
+                      width={20}
+                      height={20}
+                      alt="materials"
+                      className="max-[250px]:hidden"
+                    />
+                  </button>
                 </div>
                 <p className="font-sans text-[1.2rem] md:max-2xl:text-[1.3rem]">
                   0{+index + 1}
