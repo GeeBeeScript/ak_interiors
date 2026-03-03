@@ -9,7 +9,7 @@ const MainDisplay = () => {
           <p className="font-main text-[1.5rem] min-[370px]:text-[1.7rem] sm-max-2xl:text-[2.5rem] lg:text-[3rem] text-shadow-2xs shadow-display-text">
             Raffinerade interiörer av designexperter
           </p>
-          <p className="text-[0.8rem] min-[370px]:text-[0.95rem] backdrop-blur-sm bg-white/20 sm:max-2xl:text-[1.1rem] font-brico md:flex md:flex-col md:justify-between md:gap-5">
+          <div className="text-[0.8rem] min-[370px]:text-[0.95rem] backdrop-blur-sm bg-white/20 sm:max-2xl:text-[1.1rem] font-brico md:flex md:flex-col md:justify-between md:gap-5">
             <p>
               Anna Katarina är inredare med internationell bakgrund och över 15
               års erfarenhet av att forma miljöer för både privata och
@@ -28,7 +28,7 @@ const MainDisplay = () => {
               en internationell designkänsla, där det personliga alltid står i
               centrum.
             </p>
-          </p>
+          </div>
 
           <button
             onClick={() => {

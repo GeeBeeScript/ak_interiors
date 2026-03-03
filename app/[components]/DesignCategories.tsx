@@ -1,6 +1,5 @@
 import React from "react";
 import AutoSlideshow from "./AutoSlideshow";
-import { slideShowArrayLeft, slideShowArrayRight } from "../arrayValues";
 import Image from "next/image";
 
 const DesignCategories = () => {
