@@ -43,7 +43,7 @@
   --animate-scroll-up: scrollUp 40s linear infinite;
   --animate-scroll-down: scrollDown 45s linear infinite;
 
-  --animate-scroll: scroll 30s linear infinite;
+  --animate-scroll: scroll 40s linear infinite;
 
   @keyframes scroll {
     from {
