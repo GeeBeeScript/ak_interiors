@@ -4,7 +4,7 @@ import Link from "next/link";
 const MainDisplay = () => {
   return (
     <section className="w-full h-[120vh] mb-20">
-      <div className="bg-[url('/resources_new/spacejoy_new.jpg')] h-full w-full bg-cover bg-center bg-no-repeat lg:bg-position-[center_57%] place-content-end lg:px-8 lg:py-12 px-4 py-6">
+      <div className="bg-[url('/resources_new/white_mirror.jpeg')] h-full w-full bg-cover bg-center bg-no-repeat lg:bg-position-[center_57%] place-content-end lg:px-8 lg:py-12 px-4 py-6">
         <div className="text-newsletter-text w-[80%] max-[205px]:w-full min-[400px]:w-[70%] sm:max-2xl:w-[60%] flex flex-col justify-between items-start gap-2">
           <p className="font-main text-[1.5rem] min-[370px]:text-[1.7rem] sm-max-2xl:text-[2.5rem] lg:text-[3rem] text-shadow-2xs shadow-display-text">
             Raffinerade interiörer av designexperter

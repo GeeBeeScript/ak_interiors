@@ -9,14 +9,14 @@ const images: string[] = [
   "resources_new/brown_mirror.jpeg",
   "resources_new/black_bedroom.jpeg",
   "resources_new/light_dining.jpeg",
-  "resources_new/white_cabinet.jpeg",
+  "resources_new/white_pantry.jpeg",
   "resources_new/white_dining.jpeg",
   "resources_new/white_mirror.jpeg"
 ]
 
 const DesignCategories = () => {
   return (
-    <div className="bg-zinc-200 py-7 flex w-full flex-col items-center">
+    <div className="bg-white py-7 flex w-full flex-col items-center">
       <div className="flex flex-col gap-5 sm:gap-7 justify-between items-center mb-10 px-4 py-2 w-full sm:max-2xl:w-[50%] text-center">
         <p className="font-bold font-main text-3xl text-center text-[#333]">
           INREDNING VERKSAMHET
@@ -125,14 +125,13 @@ const DesignCategories = () => {
         </div>
       </div>
 
-      <div className="w-full overflow-hidden py-6 group">
-      <div className="flex w-max gap-4 animate-scroll group-hover:[animation-play-state:paused]">
-        {[...images, ...images].map((src, index) => (
-          <img
+    <div className="px-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {images.map((src, index) => (
+          <img 
             key={index}
             src={src}
-            alt="slider"
-            className="h-[60vh] sm:h-[70vh] w-auto object-cover"
+            alt="list of work images"
           />
         ))}
       </div>
@@ -155,3 +154,18 @@ const DesignCategories = () => {
 };
 
 export default DesignCategories;
+
+
+
+{/* <div className="w-full overflow-hidden py-6 group">
+      <div className="flex w-max gap-4 animate-scroll group-hover:[animation-play-state:paused]">
+        {[...images, ...images].map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            alt="slider"
+            className="h-[60vh] sm:h-[70vh] w-auto object-cover"
+          />
+        ))}
+      </div>
+    </div> */}
