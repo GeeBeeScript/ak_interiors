@@ -20,19 +20,7 @@ const OtherNav = () => {
   return (
     <header className="fixed top-0 inset-x-0 z-20 ">
       <MenuOverlay isOpen={mobileMenuOpen} onClose={menuCloseHandler} />
-      {/* Banner section */}
-      <div className="w-full py-1.5 bg-newsletter-bg text-newsletter-text">
-        <div className="font-bold w-[90%] mx-auto text-center font-schib text-[0.8rem] sm:hidden">
-          Gå med oss ​​och få information om förhandsvisningar och rabatter
-        </div>
-
-        <div className="font-bold w-[70%] sm:max-2xl:w-[50%] mx-auto text-center font-schib hidden sm:block">
-          Gå med oss ​​och få information om förhandsvisningar, rabatter och
-          exklusiva kampanjer
-        </div>
-      </div>
-      {/* End of Banner section */}
-
+      
       {/* Navigation */}
       <nav
         className={`

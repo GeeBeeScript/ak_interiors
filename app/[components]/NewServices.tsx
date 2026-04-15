@@ -1,4 +1,6 @@
 import React from "react";
+import { images } from "../arrayValues";
+import { ArrowRight } from "lucide-react";
 
 const NewServices = () => {
   return (
@@ -27,6 +29,24 @@ const NewServices = () => {
           </div>
           <div>Inkluderar ej restid.</div>
         </div>
+        <div>
+          <img key={images[3]} src={images[3]} alt="list of work images" className="w-[60vh] sm:w-[80vh]" />
+        </div>
+        <div className="flex justify-end items-center w-full text-display-text font-schib text-[0.9rem] sm:text-[1rem] underline underline-offset-4">
+          <div
+            onClick={() => {
+              document
+                .getElementById("form")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="flex space-x-2 items-center cursor-pointer"
+          >
+            <p>Kontakta oss</p>
+            <p>
+              <ArrowRight />
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="w-full px-5 flex flex-col justify-between items-center gap-5 sm:gap-10">
@@ -53,6 +73,24 @@ const NewServices = () => {
             Konsultationen kan även ske på plats i form av hembesök. Ett besök
             varar mellan 1,5 och 6 timmar beroende på bostadens storlek och
             antal ytor. Kontakta mig idag för att diskutera!
+          </div>
+        </div>
+        <div>
+          <img key={images[4]} src={images[4]} alt="list of work images" className="w-[60vh] sm:w-[80vh]"/>
+        </div>
+        <div className="flex justify-end items-center w-full text-display-text font-schib text-[0.9rem] sm:text-[1rem] underline underline-offset-4">
+          <div
+            onClick={() => {
+              document
+                .getElementById("form")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="flex space-x-2 items-center cursor-pointer"
+          >
+            <p>Kontakta oss</p>
+            <p>
+              <ArrowRight />
+            </p>
           </div>
         </div>
       </div>
@@ -86,6 +124,24 @@ const NewServices = () => {
             <div>5+ rum: 2 500 kr inkl. moms</div>
           </div>
         </div>
+        <div>
+          <img key={images[5]} src={images[5]} alt="list of work images" className="w-[60vh] sm:w-[80vh]"/>
+        </div>
+        <div className="flex justify-end items-center w-full text-display-text font-schib text-[0.9rem] sm:text-[1rem] underline underline-offset-4">
+          <div
+            onClick={() => {
+              document
+                .getElementById("form")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="flex space-x-2 items-center cursor-pointer"
+          >
+            <p>Kontakta oss</p>
+            <p>
+              <ArrowRight />
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="w-full px-5 flex flex-col justify-between items-center gap-5 sm:gap-10">
@@ -105,6 +161,24 @@ const NewServices = () => {
             Jag åtar mig både mindre och större uppdrag och ser fram emot att
             tillsammans skapa en lösning som är anpassad efter dina behov, din
             stil och ditt hem.
+          </div>
+        </div>
+        <div>
+          <img key={images[6]} src={images[6]} alt="list of work images" className="w-[60vh] sm:w-[80vh]"/>
+        </div>
+        <div className="flex justify-end items-center w-full text-display-text font-schib text-[0.9rem] sm:text-[1rem] underline underline-offset-4">
+          <div
+            onClick={() => {
+              document
+                .getElementById("form")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="flex space-x-2 items-center cursor-pointer"
+          >
+            <p>Kontakta oss</p>
+            <p>
+              <ArrowRight />
+            </p>
           </div>
         </div>
       </div>

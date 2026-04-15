@@ -2,23 +2,14 @@ import React from "react";
 import AutoSlideshow from "./AutoSlideshow";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { images } from "../arrayValues";
 
-const images: string[] = [
-  "resources_new/white_cabinet.jpeg",
-  "resources_new/book_case.jpeg",
-  "resources_new/brown_mirror.jpeg",
-  "resources_new/black_bedroom.jpeg",
-  "resources_new/light_dining.jpeg",
-  "resources_new/white_pantry.jpeg",
-  "resources_new/white_dining.jpeg",
-  "resources_new/white_mirror.jpeg"
-]
 
 const DesignCategories = () => {
   return (
     <div className="bg-white py-7 flex w-full flex-col items-center">
-      <div className="flex flex-col gap-5 sm:gap-7 justify-between items-center mb-10 px-4 py-2 w-full sm:max-2xl:w-[50%] text-center">
-        <p className="font-bold font-main text-3xl text-center text-[#333]">
+      <div className="flex flex-col gap-5 sm:gap-7 justify-between items-center mb-12 px-4 py-2 w-full sm:max-2xl:w-[50%] text-center">
+        <p className="font-bold font-main text-3xl text-center text-gold-section-color/70">
           INREDNING VERKSAMHET
         </p>
         <div className="font-schib text-[0.9rem] md:text-[1.1rem] text-display-text">
@@ -50,10 +41,18 @@ const DesignCategories = () => {
             </p>
           </div>
         </div>
+        <div>
+          <img 
+            key={images[2]}
+            src={images[2]}
+            alt="list of work images"
+            className="w-[60vh] sm:w-[80vh]"
+          />
+        </div>
       </div>
 
-      <div className="flex flex-col gap-5 sm:gap-7 justify-between items-center mb-10 px-4 py-2 w-full sm:max-2xl:w-[50%] text-center">
-        <p className="font-bold font-main text-3xl text-center text-[#333]">
+      <div className="flex flex-col gap-5 sm:gap-7 justify-between items-center mb-12 px-4 py-2 w-full sm:max-2xl:w-[50%] text-center">
+        <p className="font-bold font-main text-3xl text-center text-gold-section-color/70">
           PLANLÖSNING OCH MÄTNING
         </p>
         <div className="font-schib text-[0.9rem] md:text-[1.1rem] text-display-text">
@@ -85,10 +84,17 @@ const DesignCategories = () => {
             </p>
           </div>
         </div>
+        <div>
+          <img 
+            key={images[1]}
+            src={images[1]}
+            alt="list of work images"
+          />
+        </div>
       </div>
 
-      <div className="flex flex-col gap-5 sm:gap-7 justify-between items-center mb-7 px-4 py-2 w-full sm:max-2xl:w-[50%] text-center">
-        <p className="font-bold font-main text-3xl text-center text-[#333] max-[400px]:break-all">
+      <div className="flex flex-col gap-5 sm:gap-7 justify-between items-center mb-12 px-4 py-2 w-full sm:max-2xl:w-[50%] text-center">
+        <p className="font-bold font-main text-3xl text-center text-gold-section-color/70 max-[400px]:break-all">
           MÖBELRENOVERING / SPRUTLACKERING
         </p>
         <div className="font-schib text-[0.9rem] md:text-[1.1rem] text-display-text">
@@ -123,19 +129,14 @@ const DesignCategories = () => {
             </p>
           </div>
         </div>
-      </div>
-
-    <div className="px-4">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {images.map((src, index) => (
+        <div>
           <img 
-            key={index}
-            src={src}
+            key={images[0]}
+            src={images[0]}
             alt="list of work images"
           />
-        ))}
+        </div>
       </div>
-    </div>
 
       <div className="w-[70%] sm:w-[60%] my-5">
         <button

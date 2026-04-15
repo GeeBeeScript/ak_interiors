@@ -24,4 +24,13 @@ export const benefitValues = [
 ];
 
 
-
+export const images: string[] = [
+  "resources_new/white_cabinet.jpeg",
+  "resources_new/book_case.jpeg",
+  "resources_new/brown_mirror.jpeg",
+  "resources_new/black_bedroom.jpeg",
+  "resources_new/light_dining.jpeg",
+  "resources_new/white_pantry.jpeg",
+  "resources_new/white_dining.jpeg",
+  "resources_new/white_mirror.jpeg"
+]

@@ -116,6 +116,32 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               OnlineStyling
             </button>
           </li>
+          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
+            <button
+              onClick={() => {
+                document
+                  .getElementById("form")
+                  ?.scrollIntoView({ behavior: "smooth" });
+                onClose();
+              }}
+              className="hover:opacity-70 transition"
+            >
+              Konst av Katarina Eze
+            </button>
+          </li>
+          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
+            <button
+              onClick={() => {
+                document
+                  .getElementById("form")
+                  ?.scrollIntoView({ behavior: "smooth" });
+                onClose();
+              }}
+              className="hover:opacity-70 transition"
+            >
+              Katarina Ezes vloggar
+            </button>
+          </li>
         </ul>
       </nav>
     </div>
