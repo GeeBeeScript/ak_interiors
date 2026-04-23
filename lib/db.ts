@@ -1,26 +1,18 @@
-// You can uncomment during development (comment was made for deployment)
 import { PrismaClient } from "@/lib/generated/prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
-
-import "dotenv/config";
 
 const adapter = new PrismaPg({
 	connectionString: process.env.DATABASE_URL!,
 });
 
-declare global {
-	var __prisma__: PrismaClient | undefined;
-}
+const globalForPrisma = globalThis as unknown as {
+	prisma: PrismaClient | undefined;
+};
 
-const db =
-	global.__prisma__ ??
-	new PrismaClient({
-		adapter,
-	});
+export const db =
+	globalForPrisma.prisma ??
+	new PrismaClient({ adapter });
 
 if (process.env.NODE_ENV !== "production") {
-	global.__prisma__ = db;
+	globalForPrisma.prisma = db;
 }
-
-export default db;
-export { db };
