@@ -5,6 +5,7 @@
 
 generator client {
   provider = "prisma-client"
+  // You can uncomment during development (comment was made to the line below for deployment)
   output   = "../lib/generated/prisma"
 }
 

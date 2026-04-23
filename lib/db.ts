@@ -1,3 +1,4 @@
+// You can uncomment during development (comment was made for deployment)
 import { PrismaClient } from "@/lib/generated/prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 
