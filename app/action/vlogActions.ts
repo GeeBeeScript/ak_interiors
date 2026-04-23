@@ -1,6 +1,6 @@
 "use server"
 
-import db from "@/lib/db"
+import { db } from "@/lib/db"
 
 export async function createVlogPost({ link, caption }: { link: string, caption?: string }) {
     await db.vlogs.create({

@@ -1,4 +1,4 @@
-import db from "@/lib/db";
+import { db } from "@/lib/db";
 import S3 from "@/lib/s3";
 import { DeleteObjectCommand } from "@aws-sdk/client-s3";
 import { NextRequest, NextResponse } from "next/server";
