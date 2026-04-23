@@ -48,11 +48,11 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
           <button
             onClick={onClose}
             aria-label="Close menu"
-            className="text-2xl font-bold"
+            className="text-2xl font-bold cursor-pointer"
           >
             {/* Placeholder for X icon */}
             <Image
-              src="resources_new/close.svg"
+              src="/resources_new/close.svg"
               width={20}
               height={20}
               alt="close icon"
@@ -63,20 +63,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
 
       {/* Menu content */}
       <nav className="flex flex-1 items-center justify-center">
-        <ul className="flex flex-col items-center gap-6 text-lg sm:text-xl lg:text-2xl ">
-          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
-            <button
-              onClick={() => {
-                document
-                  .getElementById("form")
-                  ?.scrollIntoView({ behavior: "smooth" });
-                onClose();
-              }}
-              className="hover:opacity-70 transition"
-            >
-              KulorKonsultation
-            </button>
-          </li>
+        <ul className="flex flex-col items-center gap-7 text-lg sm:text-xl lg:text-2xl ">
           <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
             <button
               onClick={() => {
@@ -100,7 +87,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               }}
               className="hover:opacity-70 transition"
             >
-              Inredningsuppdrag
+              KulorKonsultation
             </button>
           </li>
           <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
@@ -126,7 +113,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               }}
               className="hover:opacity-70 transition"
             >
-              Konst av Katarina Eze
+              Inredningsuppdrag
             </button>
           </li>
           <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
@@ -139,8 +126,51 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               }}
               className="hover:opacity-70 transition"
             >
-              Katarina Ezes vloggar
+              Inredning Verksamhet
             </button>
+          </li>
+          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
+            <button
+              onClick={() => {
+                document
+                  .getElementById("form")
+                  ?.scrollIntoView({ behavior: "smooth" });
+                onClose();
+              }}
+              className="hover:opacity-70 transition"
+            >
+              Planlösning Och Mätning
+            </button>
+          </li>
+          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
+            <button
+              onClick={() => {
+                document
+                  .getElementById("form")
+                  ?.scrollIntoView({ behavior: "smooth" });
+                onClose();
+              }}
+              className="hover:opacity-70 transition"
+            >
+              Möbelrenovering / Sprutlackering
+            </button>
+          </li>
+          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
+            <Link
+              href="/konst_av_katarina_eze"
+              className="hover:opacity-70 transition"
+            >
+              Konst av Katarina Eze
+            </Link>
+          </li>
+          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
+            <Link
+              href="/katarina_ezes_vloggar"
+              className="hover:opacity-70 transition"
+            >
+              {" "}
+              Katarina Ezes vloggar
+            </Link>
           </li>
         </ul>
       </nav>

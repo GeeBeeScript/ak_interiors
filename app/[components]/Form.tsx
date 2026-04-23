@@ -161,10 +161,13 @@ export default function Form() {
             className="mt-1 p-2 sm:p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-black text-display-text font-schib"
           >
             <option value="">Välj en tjänst</option>
-            <option value="KulorKonsultation">KulorKonsultation</option>
             <option value="Stylingkonsultation">Stylingkonsultation</option>
+            <option value="KulorKonsultation">KulorKonsultation</option>
+            <option value="OnlineStyling">OnlineStyling</option>
             <option value="Inredningsuppdrag">Inredningsuppdrag</option>
-            <option value="Möbelrum">Möbelrum</option>
+            <option value="Inredning Verksamhet">Inredning Verksamhet</option>
+            <option value="Planlösning Och Mätning">Planlösning Och Mätning</option>
+            <option value="Möbelrenovering / Sprutlackering">Möbelrenovering / Sprutlackering</option>
           </select>
           {errors.service && (
             <span className="text-red-500 text-sm mt-1">{errors.service}</span>

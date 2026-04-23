@@ -71,16 +71,6 @@ function NavContent(props: {
           }}
           className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
         >
-          KulorKonsultation
-        </p>
-        <p
-          onClick={() => {
-            document
-              .getElementById("form")
-              ?.scrollIntoView({ behavior: "smooth" });
-          }}
-          className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
-        >
           Stylingkonsultation
         </p>
         <p
@@ -91,9 +81,8 @@ function NavContent(props: {
           }}
           className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
         >
-          Inredningsuppdrag
+          KulorKonsultation
         </p>
-        
         <p
           onClick={() => {
             document
@@ -102,8 +91,31 @@ function NavContent(props: {
           }}
           className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
         >
-          Möbelrum
+          OnlineStyling
         </p>
+        
+        <p
+          onClick={() => {
+            document
+              .getElementById("form")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="lg:block hidden cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
+        >
+          Inredningsuppdrag
+        </p>
+
+         <p
+          onClick={() => {
+            document
+              .getElementById("form")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="xl:block hidden cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
+        >
+          Inredning Verksamhet
+        </p>
+
       </li>
 
       <li className="flex justify-between items-center gap-8">

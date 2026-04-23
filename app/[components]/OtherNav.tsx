@@ -18,7 +18,8 @@ const OtherNav = () => {
   };
 
   return (
-    <header className="fixed top-0 inset-x-0 z-20 ">
+    <>
+      <header className="fixed top-0 inset-x-0 z-20 ">
       <MenuOverlay isOpen={mobileMenuOpen} onClose={menuCloseHandler} />
       
       {/* Navigation */}
@@ -32,6 +33,22 @@ const OtherNav = () => {
         <NavContent openMobileMenu={menuOpenHandler} />
       </nav>
     </header>
+
+    <div className="opacity-0">
+      <MenuOverlay isOpen={mobileMenuOpen} onClose={menuCloseHandler} />
+      
+      {/* Navigation */}
+      <nav
+        className={`
+            w-full 
+           bg-newsletter-text text-newsletter-bg transition-all
+            }
+        `}
+      >
+        <NavContent openMobileMenu={menuOpenHandler} />
+      </nav>
+    </div>
+    </>
   );
 };
 
@@ -75,11 +92,11 @@ function NavContent(props: { openMobileMenu: () => void }) {
 
         <div className="md:hidden" onClick={props.openMobileMenu}>
           <Image
-            src={`resources_new/${"menu_icon.svg"}`}
+            src={`/resources_new/${"menu_icon.svg"}`}
             width={30}
             height={30}
             alt="menu icon"
-            className="w-9 h-9"
+            className="w-9 h-9 cursor-pointer"
           />
         </div>
       </li>

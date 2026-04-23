@@ -30,7 +30,7 @@ const Footer = () => {
             <span className="flex justify-between items-center">
                 <span>Copyright</span>
                 <span>
-                    <Image src="resources_new/copyright.svg" width={20} height={20} alt="copyright image"/>
+                    <Image src="/resources_new/copyright.svg" width={20} height={20} alt="copyright image"/>
                 </span>
             </span>
             <span>2026</span>
