@@ -40,7 +40,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
     >
       {/* Close button */}
       <div>
-        <div className="absolute top-20 z-20 w-full font-nunito text-[1.1rem] font-light text-center tracking-[0.15em]">
+        <div className="absolute top-10 z-20 w-full font-nunito text-[1.1rem] font-light text-center tracking-[0.15em]">
           <div>ANNA KATARINA</div>
           <div>INTERIORS</div>
         </div>
@@ -160,7 +160,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               href="/konst_av_katarina_eze"
               className="hover:opacity-70 transition"
             >
-              Konst av Katarina Eze
+              Konsta av Anna Katarina
             </Link>
           </li>
           <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
@@ -169,7 +169,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               className="hover:opacity-70 transition"
             >
               {" "}
-              Katarina Ezes vloggar
+              Anna Katarinas vloggar
             </Link>
           </li>
         </ul>

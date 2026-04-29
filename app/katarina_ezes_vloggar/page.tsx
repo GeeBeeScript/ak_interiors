@@ -1,23 +1,25 @@
-import { cookies } from 'next/headers'
-import React from 'react'
-import OtherNav from '../[components]/OtherNav'
-import VlogsDisplay from '../[components]/VlogsDisplay'
+import { cookies } from "next/headers";
+import React from "react";
+import OtherNav from "../[components]/OtherNav";
+import VlogsDisplay from "../[components]/VlogsDisplay";
 
 const KatrinaEzeVloggar = async () => {
-  const cookieStore = await cookies()
-  const isAdmin = cookieStore.get("isAdmin")?.value === "true"
+  const cookieStore = await cookies();
+  const isAdmin = cookieStore.get("isAdmin")?.value === "true";
   return (
     <main>
       {/* <Navigation /> */}
       <OtherNav />
-      <section className='mt-10 min-h-screen'>
-        <p className='w-full flex justify-center items-center font-bold font-main text-3xl text-center text-zinc-950/70 max-[400px]:break-all'>Konsta av Katarina</p>
+      <section className="mt-10 min-h-screen">
+        <p className="w-full flex justify-center items-center font-bold font-main text-3xl text-center text-zinc-950/70 max-[400px]:break-all">
+          Anna Katarinas vloggar
+        </p>
         <div>
-            <VlogsDisplay adminStatus={isAdmin}/>
+          <VlogsDisplay adminStatus={isAdmin} />
         </div>
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default KatrinaEzeVloggar
+export default KatrinaEzeVloggar;
