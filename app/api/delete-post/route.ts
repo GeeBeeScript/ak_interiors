@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     });
 
     // Trigger async cleanup (non-blocking)
-    fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cleanup`, {
+    await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cleanup`, {
       method: "POST",
       body: JSON.stringify({ groupId }),
     }).catch(() => {});

@@ -19,6 +19,8 @@ export async function POST(req: NextRequest) {
                 Prefix: prefix,
             })
         )
+ 
+        console.log("cleanup")
 
         const objects = list.Contents || []
 
