@@ -12,7 +12,7 @@ const KonstAvKatarina = async () => {
       <OtherNav />
       <section className="mt-10 min-h-screen">
         <p className="w-full flex justify-center items-center font-bold font-main text-3xl text-center text-gold-section-color/70 max-[400px]:break-all">
-          Konsta av Anna Katarina
+          Konst av Anna Katarina
         </p>
         <div>
           <ImagesDisplay adminStatus={isAdmin} />
