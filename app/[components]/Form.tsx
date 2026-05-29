@@ -219,7 +219,7 @@ export default function Form() {
                      text-sm sm:text-base
                      hover:opacity-90 transition-all duration-75 ease-in font-schib font-bold"
         >
-          framlägga
+          skicka
         </button>
       </form>
     </div>
