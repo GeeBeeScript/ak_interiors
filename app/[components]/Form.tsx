@@ -115,6 +115,10 @@ export default function Form() {
           Boka en konsultation / Kontakta oss
         </h2>
 
+        <div className="text-md sm:text-md font-medium text-display-text font-schib">
+          Du kan också nå oss via mejl på <span className="text-black/90">info@annakatarinainterior.se</span> eller på telefonnummer <span className="text-black/90">0720175620</span>.
+        </div>
+
         {/* Name */}
         <div className="flex flex-col">
           <label className="text-sm sm:text-base font-medium text-display-text font-schib">
