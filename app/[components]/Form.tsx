@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, ChangeEvent, FormEvent } from "react";
 
 type FormData = {
@@ -116,7 +117,7 @@ export default function Form() {
         </h2>
 
         <div className="text-md sm:text-md font-medium text-display-text font-schib">
-          Du kan också nå oss via mejl på <span className="text-black/90">info@annakatarinainterior.se</span> eller på telefonnummer <span className="text-black/90">0720175620</span>.
+          Du kan också nå oss via mejl på <Link href="mailto:info@annakatarinainterior.se" className="text-black/90">info@annakatarinainterior.se</Link> eller på telefonnummer <Link href="tel:0720175620" className="text-black/90">0720175620</Link>.
         </div>
 
         {/* Name */}
