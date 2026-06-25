@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState, ChangeEvent, FormEvent } from "react";
 
 type FormData = {
@@ -23,6 +24,7 @@ export default function Form() {
   });
 
   const [errors, setErrors] = useState<FormErrors>({});
+  const router = useRouter()
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLSelectElement>,
@@ -84,6 +86,8 @@ export default function Form() {
       ${formData.otherLocation}
       `,
     );
+
+    router.push("/thank_you")
 
     const mailtoLink = `mailto:info@annakatarinainterior.se?subject=${subject}&body=${body}`;
 
