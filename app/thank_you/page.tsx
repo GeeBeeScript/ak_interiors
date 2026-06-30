@@ -7,7 +7,7 @@ const ThankYouPage = () => {
     <main>
       <OtherNav />
       <div className="w-full min-h-screen flex justify-center items-center font-bold font-main text-3xl text-center text-gold-section-color/70 max-[400px]:break-all">
-        Thank you very much. We look forward to getting in contact with you
+        Tack så mycket! Vi ser fram emot att höra från dig.
       </div>
     </main>
   )
