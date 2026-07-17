@@ -138,7 +138,7 @@ const DesignCategories = () => {
         </div>
       </div>
 
-      <div className="w-[70%] sm:w-[60%] my-5">
+      <div className="w-[70%] sm:w-[60%] my-2">
         <button
           onClick={() => {
             document

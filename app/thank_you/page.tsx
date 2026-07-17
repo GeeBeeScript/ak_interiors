@@ -7,7 +7,7 @@ const ThankYouPage = () => {
   return (
     <main>
       <OtherNav />
-      <div className="w-full space-y-4 min-h-screen flex flex-col justify-center items-center font-bold font-main text-3xl text-center text-gold-section-color/70 max-[400px]:break-all">
+      <div className="w-full px-4 space-y-4 min-h-screen flex flex-col justify-center items-center font-bold font-main text-3xl text-center text-gold-section-color/70 max-[400px]:break-all">
         <p>
           Tack så mycket! Vi ser fram emot att höra från dig.
         </p>
