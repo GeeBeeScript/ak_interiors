@@ -84,19 +84,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
               Stylingkonsultation
             </button>
           </li>
-          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
-            <button
-              onClick={() => {
-                document
-                  .getElementById("form")
-                  ?.scrollIntoView({ behavior: "smooth" });
-                onClose();
-              }}
-              className="hover:opacity-70 transition"
-            >
-              KulorKonsultation
-            </button>
-          </li>
+          
           <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
             <button
               onClick={() => {
