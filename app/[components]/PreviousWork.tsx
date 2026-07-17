@@ -7,7 +7,7 @@ import { workImages } from "../arrayValues";
 const PreviousWork = () => {
   return (
     <section className="w-full flex flex-col gap-5 my-4">
-      <div className="font-bold font-main text-[1.3rem] max-sm:text-[1.2rem] text-center text-gold-section-color/70 break-all">Previous Work</div>
+      <div className="font-bold font-main text-[1.7rem] max-sm:text-[1.5rem] text-center text-gold-section-color/70 break-all underline underline-offset-8">Projektgalleri</div>
       <div className="w-full px-3 max-sm:px-1 py-2">
         <div className="grid grid-cols-3 gap-2 w-full">
           {workImages.map((item) => (
