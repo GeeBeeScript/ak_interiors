@@ -8,6 +8,7 @@ import Form from "./[components]/Form";
 import DesignCategories from "./[components]/DesignCategories";
 import Navigation from "./[components]/Navigation";
 import NewServices from "./[components]/NewServices";
+import PreviousWork from "./[components]/PreviousWork";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <MainDisplay />
       <NewServices />
       <DesignCategories />
+      <PreviousWork />
       <Form />
     </main>
   );

@@ -30,7 +30,12 @@ const NewServices = () => {
           <div>Inkluderar ej restid.</div>
         </div>
         <div>
-          <img key={images[3]} src={images[3]} alt="list of work images" className="w-[60vh] sm:w-[80vh]" />
+          <img
+            key={images[3]}
+            src={images[3]}
+            alt="list of work images"
+            className="w-[60vh] sm:w-[80vh]"
+          />
         </div>
         <div className="flex justify-end items-center w-full text-display-text font-schib text-[0.9rem] sm:text-[1rem] underline underline-offset-4">
           <div
@@ -76,7 +81,12 @@ const NewServices = () => {
           </div>
         </div>
         <div>
-          <img key={images[4]} src={images[4]} alt="list of work images" className="w-[60vh] sm:w-[80vh]"/>
+          <img
+            key={images[4]}
+            src={images[4]}
+            alt="list of work images"
+            className="w-[60vh] sm:w-[80vh]"
+          />
         </div>
         <div className="flex justify-end items-center w-full text-display-text font-schib text-[0.9rem] sm:text-[1rem] underline underline-offset-4">
           <div
@@ -125,7 +135,12 @@ const NewServices = () => {
           </div>
         </div>
         <div>
-          <img key={images[5]} src={images[5]} alt="list of work images" className="w-[60vh] sm:w-[80vh]"/>
+          <img
+            key={images[5]}
+            src={images[5]}
+            alt="list of work images"
+            className="w-[60vh] sm:w-[80vh]"
+          />
         </div>
         <div className="flex justify-end items-center w-full text-display-text font-schib text-[0.9rem] sm:text-[1rem] underline underline-offset-4">
           <div
@@ -164,7 +179,70 @@ const NewServices = () => {
           </div>
         </div>
         <div>
-          <img key={images[6]} src={images[6]} alt="list of work images" className="w-[60vh] sm:w-[80vh]"/>
+          <img
+            key={images[6]}
+            src={images[6]}
+            alt="list of work images"
+            className="w-[60vh] sm:w-[80vh]"
+          />
+        </div>
+        <div className="flex justify-end items-center w-full text-display-text font-schib text-[0.9rem] sm:text-[1rem] underline underline-offset-4">
+          <div
+            onClick={() => {
+              document
+                .getElementById("form")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="flex space-x-2 items-center cursor-pointer"
+          >
+            <p>Kontakta oss</p>
+            <p>
+              <ArrowRight />
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full px-5 flex flex-col justify-between items-center gap-5 sm:gap-10">
+        <p className="font-bold font-main text-2xl text-center text-gold-section-color/70 break-all">
+          Köksförnyelse och förädling
+        </p>
+        <div className="w-full flex flex-col justify-between items-start font-schib text-[0.9rem] md:text-[1.1rem] text-display-text space-y-2">
+          <div>
+            <span className="font-bold">Köksförnyelse & Design:</span> Ge ditt
+            befintliga kök ett helt nytt uttryck – utan att byta ut hela köket.
+            Genom en kombination av färgsättning, målning av köksluckor, kakel
+            eller klinker, förändring av skåpslösningar och noggrant utvalda
+            detaljer skapar vi ett kök som känns både modernt och personligt.
+            Med fokus på design, kvalitet och hållbara lösningar förvandlar vi
+            ditt kök med utgångspunkt i det som redan finns.
+          </div>
+
+          <div>
+            Under hembesöket går vi tillsammans igenom idéer, önskemål och olika
+            lösningar för att skapa ett kök som passar både ditt hem och dina
+            behov.
+          </div>
+
+          <div>
+            <p>Hembesök (1–2 timmar): 2 000 kr</p>
+            <p>Resekostnad kan tillkomma.</p>
+          </div>
+
+          <div>
+            Om projektet kräver ytterligare arbete, såsom framtagning av
+            materialförslag, färgsättning, sammanställning av kulörpaletter
+            eller annan projektering, debiteras detta enligt timtaxa. Kostnaden
+            anpassas efter projektets omfattning.
+          </div>
+        </div>
+        <div>
+          <img
+            key={images[8]}
+            src={images[8]}
+            alt="list of work images"
+            className="w-[60vh] sm:w-[80vh]"
+          />
         </div>
         <div className="flex justify-end items-center w-full text-display-text font-schib text-[0.9rem] sm:text-[1rem] underline underline-offset-4">
           <div
