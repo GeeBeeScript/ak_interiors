@@ -62,6 +62,10 @@ function NavContent(props: { openMobileMenu: () => void }) {
 
       <li className="hidden md:flex md:justify-between md:items-center md:gap-[2.4rem] font-space">
         <p className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in">
+          <Link href="/ak_furniture">Anna Katarina Furniture</Link>
+        </p>
+        
+        <p className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in">
           <Link href="/kulorkonsultation">KulorKonsultation</Link>
         </p>
         <p className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in">

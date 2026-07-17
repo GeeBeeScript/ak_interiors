@@ -63,6 +63,12 @@ function NavContent(props: {
       </li>
 
       <li className="hidden md:flex md:justify-between md:items-center md:gap-[2.4rem] font-space">
+       <Link href="/ak_furniture"
+          className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
+        >
+          Anna Katarina Furniture
+        </Link>
+       
         <p
           onClick={() => {
             document
@@ -73,7 +79,7 @@ function NavContent(props: {
         >
           Stylingkonsultation
         </p>
-        <p
+        {/* <p
           onClick={() => {
             document
               .getElementById("form")
@@ -82,7 +88,7 @@ function NavContent(props: {
           className="cursor-pointer hover:text-bg-section-color/95 transition-all duration-75 ease-in"
         >
           KulorKonsultation
-        </p>
+        </p> */}
         <p
           onClick={() => {
             document

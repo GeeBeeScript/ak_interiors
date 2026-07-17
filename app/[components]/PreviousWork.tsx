@@ -6,12 +6,12 @@ import { workImages } from "../arrayValues";
 
 const PreviousWork = () => {
   return (
-    <section className="w-full flex flex-col gap-5 my-4">
-      <div className="font-bold font-main text-[1.7rem] max-sm:text-[1.5rem] text-center text-gold-section-color/70 break-all underline underline-offset-8">Projektgalleri</div>
+    <section className="w-full flex flex-col gap-5 mb-4 mt-30">
+      <div className="font-bold font-main text-[1.7rem] max-sm:text-[1.5rem] text-center text-gold-section-color/70 break-all underline underline-offset-8">Anna Katarina Furniture</div>
       <div className="w-full px-3 max-sm:px-1 py-2">
-        <div className="grid grid-cols-3 gap-2 w-full">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 w-full">
           {workImages.map((item) => (
-            <img src={item} alt="list of images" width={100} height={100} className="w-full h-100 object-cover"/>
+            <img src={item} alt="list of images" width={100} height={100} className="w-full h-50 md:h-100 object-cover"/>
           ))}
         </div>
 

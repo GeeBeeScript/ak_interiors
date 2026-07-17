@@ -76,9 +76,6 @@ export const workImages: string[] = [
   "resources_new/new (37).jpeg",
   "resources_new/new (38).jpeg",
   "resources_new/new (39).jpeg",
-  "resources_new/new (30).jpeg",
-  "resources_new/new (30).jpeg",
-  "resources_new/new (30).jpeg",
   "resources_new/new (40).jpeg",
   "resources_new/new (41).jpeg",
   "resources_new/new (42).jpeg",
@@ -91,5 +88,4 @@ export const workImages: string[] = [
   "resources_new/new (49).jpeg",
   "resources_new/new (50).jpeg",
   "resources_new/new (51).jpeg",
-
 ]

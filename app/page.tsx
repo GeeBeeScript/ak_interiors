@@ -17,7 +17,6 @@ export default function Home() {
       <MainDisplay />
       <NewServices />
       <DesignCategories />
-      <PreviousWork />
       <Form />
     </main>
   );

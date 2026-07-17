@@ -65,6 +65,13 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
       <nav className="flex flex-1 items-center justify-center">
         <ul className="flex flex-col items-center gap-7 text-lg sm:text-xl lg:text-2xl ">
           <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
+            <Link href="/ak_furniture"
+              className="hover:opacity-70 transition"
+            >
+              Anna Katarina Furniture
+            </Link>
+          </li>
+          <li className="border-b-2 border-display-text hover:text-[#888] transition-all duration-100">
             <button
               onClick={() => {
                 document
