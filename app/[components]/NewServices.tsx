@@ -204,18 +204,17 @@ const NewServices = () => {
       </div>
 
       <div className="w-full px-5 flex flex-col justify-between items-center gap-5 sm:gap-10">
-        <p className="font-bold font-main text-2xl text-center text-gold-section-color/70 break-all">
+        <p className="font-bold font-main text-2xl text-center uppercase text-gold-section-color/70 break-all">
           Köksförnyelse och förädling
         </p>
         <div className="w-full flex flex-col justify-between items-start font-schib text-[0.9rem] md:text-[1.1rem] text-display-text space-y-2">
           <div>
-            <span className="font-bold">Köksförnyelse & Design:</span> Ge ditt
-            befintliga kök ett helt nytt uttryck – utan att byta ut hela köket.
-            Genom en kombination av färgsättning, målning av köksluckor, kakel
-            eller klinker, förändring av skåpslösningar och noggrant utvalda
-            detaljer skapar vi ett kök som känns både modernt och personligt.
-            Med fokus på design, kvalitet och hållbara lösningar förvandlar vi
-            ditt kök med utgångspunkt i det som redan finns.
+            Ge ditt befintliga kök ett helt nytt uttryck – utan att byta ut hela
+            köket. Genom en kombination av färgsättning, målning av köksluckor,
+            kakel eller klinker, förändring av skåpslösningar och noggrant
+            utvalda detaljer skapar vi ett kök som känns både modernt och
+            personligt. Med fokus på design, kvalitet och hållbara lösningar
+            förvandlar vi ditt kök med utgångspunkt i det som redan finns.
           </div>
 
           <div>
@@ -232,8 +231,7 @@ const NewServices = () => {
           <div>
             Om projektet kräver ytterligare arbete, såsom framtagning av
             materialförslag, färgsättning, sammanställning av kulörpaletter
-            eller annan projektering, debiteras detta enligt timtaxa. Kostnaden
-            anpassas efter projektets omfattning.
+            eller annan projektering, debiteras detta enligt timtaxan 595kr/h.
           </div>
         </div>
         <div>
