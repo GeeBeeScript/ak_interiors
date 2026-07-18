@@ -33,7 +33,7 @@ export const images: string[] = [
   "resources_new/white_pantry.jpeg",
   "resources_new/white_dining.jpeg",
   "resources_new/white_mirror.jpeg",
-  "resources_new/new (30).jpeg",
+  "resources_new/new (53).jpeg",
 ]
 
 export const workImages: string[] = [
